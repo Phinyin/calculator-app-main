@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100dvh;
+    background-color:hsl(222, 26%, 31%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan", sans-serif;
+}
+
+main{
+    width: 400px;
+    /* height: fit-content; */
+    min-height: 500px;
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* justify-content: space-between; */
+}
+
+.calc{
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    /* font-family: "League Spartan", sans-serif; */
+justify-content: space-between;
+    align-items: center;
+}
+
+.calc p{
+    /* font-weight: bold; */
+    font-size: 14px;
+    /* color: white;
+    font-family: "League Spartan", sans-serif ; */
+
+}
+
+.theme-div{
+    display: flex;
+    align-items: flex-end;
+    gap: 13px;
+
+}
+.theme-div p{
+    font-size: 10px;
+    margin-bottom: 5px;
+    /* align-items: center;
+    flex-direction: column; */
+}
+
+.theme-div button{
+    width: 40px;
+    height: 20px;
+    /* gap: 10px; */
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border: none;
+
+}
+
+.theme-div button span{
+    display: block; 
+        background-color: hsl(6, 63%, 50%);
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    
+}
+
+
+.theme-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theme-numbers{
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-bottom: 2px;
+    color: white;
+
+}
+
+.theme-div button{
+    width: 40px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: hsl(223, 31%, 20%);
+    border: none;
+}
+
+.calculator-div{
+    width: 100%;
+    min-height: 80px;
+background-color: hsl(224, 36%, 15%);
+padding:15px 20px;
+border-radius: 5px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.calculator-div span{
+    font-size: 35px;
+        /* background-color: white; */
+        font-weight: bold;
+        color: white;
+        /* height: 10px;
+        width: 10px;
+        border-radius: 50px; */
+}
+
+.btn-div{
+    width: 100%;
+    background-color:hsl(223, 31%, 20%) ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding: 20px;
+    border-radius: 5px;
+    gap: 15px;
+
+}
+
+.btn-div button{
+font-family: "League Spartan", sans-serif  ;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 0px hsl(224, 36%, 15%);
+}
+
+.btn-div .reset{
+    background-color:hsl(225, 21%, 49%) ;
+    grid-column: 1 / 3;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.btn-div .equal{
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    grid-column: 3 / 5;
+}
+
+.btn-div .del{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    
+}
+
+.normal .theme-div button{
+    span{
+        transform: translateX(15px);
+    }
+}
+
+.dark .theme-div button{
+    span{
+        transform: translateX(25px);
+    }
+}
+
+
+/* NORMAL */
+
+.normal {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.normal .calc {
+    color: hsl(60, 10%, 19%);
+}
+
+.normal .theme-div p{
+     color: hsl(60, 10%, 19%);
+}
+
+.normal .theme-numbers {
+    color: hsl(60, 10%, 19%);
+}
+
+.normal .calculator-div {
+    background-color: hsl(0, 0%, 93%);
+}
+
+.normal .calculator-div span {
+    color: hsl(60, 10%, 19%);
+}
+
+.normal .btn-div {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.normal .btn-div button {
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 0px 5px 0px hsl(35, 11%, 61%);
+}
+
+.normal .btn-div .del{
+      background-color: hsl(185, 42%, 37%);
+    color: white;
+    box-shadow: 0px 5px 0px hsl(185, 58%, 25%);
+}
+
+.normal .btn-div .reset {
+    background-color: hsl(185, 42%, 37%);
+    color: white;
+    box-shadow: 0px 5px 0px hsl(185, 58%, 25%);
+}
+
+.normal .btn-div .equal {
+    background-color: hsl(25, 98%, 40%);
+    color: white;
+    box-shadow: 0px 5px 0px hsl(25, 99%, 27%);
+}
+
+.normal .theme-div button {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.normal .theme-div button span {
+    background-color: hsl(25, 98%, 40%);
+    transform: translateX(10px);
+}
+
+
+
+
+/* DARK */
+
+.dark {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.dark .calc {
+    color: hsl(52, 100%, 62%);
+}
+
+.dark .theme-div p{
+     color: hsl(52, 100%, 62%);
+}
+.dark .theme-numbers {
+    color: hsl(52, 100%, 62%);
+}
+
+.dark .calculator-div {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.dark .calculator-div span {
+    color: hsl(52, 100%, 62%);
+}
+
+.dark .btn-div {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.dark .btn-div button {
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0px 5px 0px hsl(290, 70%, 36%);
+}
+
+.dark .btn-div .del{
+     background-color: hsl(281, 89%, 26%);
+    color: white;
+    box-shadow: 0px 5px 0px hsl(285, 91%, 35%);
+}
+
+.dark .btn-div .reset {
+    background-color: hsl(281, 89%, 26%);
+    color: white;
+    box-shadow: 0px 5px 0px hsl(285, 91%, 35%);
+}
+
+.dark .btn-div .equal {
+    background-color: hsl(176, 100%, 44%);
+    color: hsl(198, 20%, 13%);
+    box-shadow: 0px 5px 0px hsl(177, 92%, 70%);
+}
+
+.dark .theme-div button {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.dark .theme-div button span {
+    background-color: hsl(176, 100%, 44%);
+    transform: translateX(25px);
+}
